@@ -12,19 +12,20 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
         @include('inc.navbar')
+        @yield('header-image')
         <div class="container">
             @include('inc.messages')
             @yield('content')
         </div>
     </div>
-
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
-     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     <script>
         CKEDITOR.replace( 'article-ckeditor' );
     </script>
