@@ -18,3 +18,13 @@
 .panel{
     margin-top:40px;
 }
+
+@media(max-width:568px){
+    .jumbotron h1{
+        font-size: 28px;
+    }
+
+    .jumbotron p{
+        font-size: 15px;
+    }
+}
